@@ -1,7 +1,7 @@
 # GazeHTA
 ## Getting Started 
 
-1. Create enviriment
+1. Create environment
 
     ```
     conda create python=3.8.5 -n gazehta
@@ -70,7 +70,7 @@ Please change the setting in run_train.py to:
 ```
 eval_only = 1 # whether to only run evaluation or not
 use_pretrained = 1 # whether to initialize the model with a pretrained model
-checkpoint_filename =  f'{output_dir}/model_vpd_gaze_depth_epoch_9.pth' # path to the pre-trained model
+checkpoint_filename =  f'./pretrained_models/model_videoAttTarget_GazeHTA_epoch_9.pth' # path to the pre-trained model
 ```
 
 Then, run the script:
@@ -78,3 +78,6 @@ Then, run the script:
 ```
 python3.8 run_train.py
 ```
+
+## Acknowledgements
+This implementation is based on [Object-aware Gaze Target Detection](https://github.com/francescotonini/object-aware-gaze-target-detection).
