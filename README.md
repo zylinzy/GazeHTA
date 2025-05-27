@@ -71,7 +71,7 @@ The StableDiffusion-v1.5 pre-trained model is in the checkpoints folder since th
 * Change the setting in run_train.py to:
 
 ```
-eval_only = 1 # whether to only run evaluation or not
+eval_only = 1 # whether to only run evaluation
 use_pretrained = 1 # whether to initialize the model with a pretrained model
 checkpoint_filename =  f'./pretrained_models/model_videoAttTarget_GazeHTA_epoch_9.pth' # path to the pre-trained model
 ```
