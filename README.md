@@ -58,22 +58,24 @@ The StableDiffusion-v1.5 pre-trained model is in the checkpoints folder since th
 * Download the checkpoint of [stable-diffusion](https://github.com/runwayml/stable-diffusion) (v1-5) and put it in the checkpoints folder. Please also follow the instructions in stable-diffusion to install the required packages.
 
 
-* Please modify your settings such as datasets, working directories, and output paths, in run_train.py first. 
+* Modify your settings such as datasets, working directories, and output paths, in run_train.py first. 
 
     ```
     python3.8 run_train.py
     ```
 
 ## Evaluation
-Please change the setting in run_train.py to:
+
+* The pre-trained models for GazeFollow and VideoAttentionTarget can be found [here](https://drive.google.com/drive/folders/1s80QqLELewJy0qZLfjHGWTqo5PGlHYeM?usp=sharing). Place the pre-trained models in the 'pretrained_models' folder.
+
+* Change the setting in run_train.py to:
 
 ```
 eval_only = 1 # whether to only run evaluation or not
 use_pretrained = 1 # whether to initialize the model with a pretrained model
 checkpoint_filename =  f'./pretrained_models/model_videoAttTarget_GazeHTA_epoch_9.pth' # path to the pre-trained model
 ```
-
-Then, run the script:
+* Then, run the script:
 
 ```
 python3.8 run_train.py
