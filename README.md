@@ -1,4 +1,6 @@
-# GazeHTA
+# GazeHTA: End-to-end Gaze Target Detection with Head-Target Association
+Implementation of [GazeHTA: End-to-end Gaze Target Detection with Head-Target Association](https://arxiv.org/abs/2404.10718), ICRA 2025.
+
 ## Getting Started 
 
 1. Create environment
@@ -83,3 +85,13 @@ python3.8 run_train.py
 
 ## Acknowledgements
 This implementation is based on [Object-aware Gaze Target Detection](https://github.com/francescotonini/object-aware-gaze-target-detection).
+
+## Citation
+```
+@article{lin2024gazehta,
+  title={GazeHTA: End-to-end Gaze Target Detection with Head-Target Association},
+  author={Lin, Zhi-Yi and Chew, Jouh Yeong and van Gemert, Jan and Zhang, Xucong},
+  journal={arXiv preprint arXiv:2404.10718},
+  year={2024}
+}
+```
